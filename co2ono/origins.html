@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body
+{
+background-color:#d0e4fe;
+font-family:sans-serif;
+}
+h1
+{
+color:black;
+text-align:left;
+}
+p
+{
+font-size:14px;
+  width:     500px;
+  word-wrap: break-word;
+}
+ul
+{
+font-family:sans-serif;
+font-size:14px;
+list-style-type: circle;
+padding: 0px;
+margin-left: 30px;
+margin-top:0;
+line-height: 1.5em;
+}
+table, th, td {
+  font-size:14px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+}
+th {
+  text-align: left;
+}
+h4 {
+  width:     500px;
+  word-wrap: break-word;
+}
+footer
+{
+font-size:10px;
+}
+</style>
+</head>
+<body>
+
+<h1>Origins</h1>
+
+<h4>I just wanted to estimate the carbon dioxide emissions of an upcoming flight... now I have this whole project</h4>
+
+<p>I was looking for a carbon-dioxide-emissions-from-air-travel calculator. 
+Well, one thing led to another, and pretty soon I had compiled the following table:</p>
+
+
+<table>
+  <caption>Round trip, ZRH to AKL via PVG, economy class, one passenger</caption>
+  <tr>
+    <th>Calculator</th>
+    <th>Answer</th> 
+    <th>In kg</th>
+  </tr>
+
+  <tr>
+    <td>atmosfair</td>
+    <td>Climate impact 10,020 kg CO<sub>2</sub></td>
+    <td style="text-align:right">10,020</td>
+  </tr>
+
+  <tr>
+    <td>brighterplanet</td>
+    <td>11418.75 kg CO<sub>2</sub>e</td>
+    <td style="text-align:right">11,419</td>
+  </tr>
+
+  <tr>
+    <td>C-Level</td>
+    <td>6.00 Tonnes CO<sub>2</sub></td>
+    <td style="text-align:right">6,000</td>
+  </tr>
+
+  <tr>
+    <td>carbon footprint</td>
+    <td>5.15 metric tons of CO<sub>2</sub>e</td>
+    <td style="text-align:right">5,150</td>
+  </tr>
+  
+  <tr>
+    <td>Carbonfund</td>
+    <td>Total Tonnes CO<sub>2</sub> 10.49</td>
+    <td style="text-align:right">10,490</td>
+  </tr>
+  
+  <tr>
+    <td>Carbon Neutral</td>
+    <td>CO<sub>2</sub> Emissions (t) 5.34</td>
+    <td style="text-align:right">5,340</td>
+  </tr>
+  
+  <tr>
+    <td>Choose climate</td>
+    <td>12,038 kg CO<sub>2</sub> Equivalent</td>
+    <td style="text-align:right">12,038</td>
+  </tr>
+  
+  <tr>
+    <td>ClimateCare</td>
+    <td>5.05 tonnes of CO<sub>2</sub></td>
+    <td style="text-align:right">5,050</td>
+  </tr>
+  
+  <tr>
+    <td>ClimateCare - air new zealand</td>
+    <td>2,693 kg of CO<sub>2</sub></td>
+    <td style="text-align:right">2,693</td>
+  </tr>
+  
+  <tr>
+    <td>co2balance</td>
+    <td>8.52 CO<sub>2</sub> Emissions tonnes</td>
+    <td style="text-align:right">8,520</td>
+  </tr>
+  
+  <tr>
+    <td>co2nsensus</td>
+    <td>5,559.00 kg CO<sub>2</sub>e</td>
+    <td style="text-align:right">5,559</td>
+  </tr>
+  
+  <tr>
+    <td>FlyGreen</td>
+    <td>5.56 tonnes of CO<sub>2</sub></td>
+    <td style="text-align:right">5,560</td>
+  </tr>
+  
+  <tr>
+    <td>Greentripper</td>
+    <td>8.12 t CO<sub>2</sub></td>
+    <td style="text-align:right">8,120</td>
+  </tr>
+  
+  <tr>
+    <td>ICAO</td>
+    <td>1778.0 CO<sub>2</sub> (KG)</td>
+    <td style="text-align:right">1,778</td>
+  </tr>
+  
+  <tr>
+    <td>myclimate</td>
+    <td>CO<sub>2</sub> amount: 7.0 t</td>
+    <td style="text-align:right">7,000</td>
+  </tr>
+  
+  <tr>
+    <td>myclimate-lufthansa</td>
+    <td>CO<sub>2</sub> amount: 2.4 t</td>
+    <td style="text-align:right">2,400</td>
+  </tr>
+  
+  <tr>
+    <td>myclimate-swiss</td>
+    <td>CO<sub>2</sub> amount: 2.4 t</td>
+    <td style="text-align:right">2,400</td>
+  </tr>
+  
+  <tr>
+    <td>omnicalculator flight-emissions</td>
+    <td>CO<sub>2</sub> Emission 10800 kg</td>
+    <td style="text-align:right">10,800</td>
+  </tr>
+  
+  <tr>
+    <td>south pole</td>
+    <td>6.653 Tons*</td>
+    <td style="text-align:right">6,653</td>
+  </tr>
+  
+  <tr>
+    <td>terrapass</td>
+    <td>14,780 lbs CO<sub>2</sub>e</td>
+    <td style="text-align:right">6,704</td>
+  </tr>
+  
+</table>
+
+<p>Calculators accessed 2019-08-11, 
+except co2balance which was returning 404 on this date, but was accessed earlier in the month.<br>
+*By email, south pole clarified that their Ton is 1,000 kg.</p>
+
+<p>That’s the results of entering the same trip into twenty different 
+carbon-dioxide-emissions-from-air-travel calculators. I was shocked, and intrigued. 
+Converting everything to kg (and wondering what are tons anyhow...) and setting aside 
+questionable comparisons (what does “CO2e”, “impact”, “equivalent” mean?), 
+there’s a factor six difference between some of those estimates! How the heck does that happen? 
+More astonishingly, I have nineteen <i>different</i> estimates... 
+are there really (at least) nineteen different ways to do this calculation? I
+started digging into the details, and this project was born.</p>
+
+</body>
+
+<footer>
+  2019-08-11
+  Copyright Sophie Redford
+</footer> 
+
+</html>
