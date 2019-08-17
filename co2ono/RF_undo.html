@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body
+{
+background-color:#d0e4fe;
+font-family:sans-serif;
+}
+h1
+{
+color:black;
+text-align:left;
+}
+p
+{
+font-size:14px;
+  width:     500px;
+  word-wrap: break-word;
+}
+ul
+{
+font-family:sans-serif;
+font-size:14px;
+list-style-type: circle;
+padding: 0px;
+margin-left: 30px;
+margin-top:0;
+line-height: 1.5em;
+width:     500px;
+}
+table, th, td {
+  font-size:14px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+}
+th {
+  text-align: left;
+}
+h4 {
+  width:     500px;
+  word-wrap: break-word;
+}
+footer
+{
+font-size:10px;
+}
+</style>
+</head>
+<body>
+
+<h1>Undoing Radiative Forcing Factors</h1>
+
+<h4>RF - pick a multiplicative factor between 1 and 3</h4>
+
+<p>Having made a cursory survey of a few calculators, one striking difference is how they deal with Radiative Forcing (RF). 
+This is designed to account for high altitude CO<sub>2</sub> emissions being 'worse' than ground level emissions. 
+As seen in the table below, calculators use factors ranging from 1 (no RF) to 3 (the amount of CO<sub>2</sub> calculated 
+is multiplied by three). 
+This accounts for at least some of the differences between the initial answers.</p>
+
+<p>If this strikes you as a rather huge source of uncertainty, then I agree with you. 
+The lack of an agreed-upon factor makes it easy to wonder if the calculators pick one 
+that suits - higher for a for-profit carbon offsetting scheme, lower for an airline looking 
+to minimise its footprint. Watch out for a future literary review on where these factors come from.</p>
+
+<table>
+  <caption>Round trip, ZRH to PVG, economy class, one passenger</caption>
+  <tr>
+    <th>Calculator</th>
+    <th>RF factor</th>
+    <th>Initial answer</th> 
+    <th>Undoing RF</th>
+  </tr>
+  
+  <tr>
+    <td>atmosfair</td>
+    <td>3 (>9 km)</td>
+    <td style="text-align:right">5,306 kg</td>
+    <td style="text-align:right">1,805 kg</td>
+  </tr>
+  
+  <tr>
+    <td>brighterplanet</td>
+    <td>2</td>
+    <td style="text-align:right">2,931 kg</td>
+    <td style="text-align:right">1,466 kg</td>
+  </tr>
+  
+  <tr>
+    <td>C-Level</td>
+    <td>1.9</td>
+    <td style="text-align:right">2,940 kg</td>
+    <td style="text-align:right">1,547 kg</td>
+  </tr>
+  
+  <tr>
+    <td>carbon footprint</td>
+    <td>1.891</td>
+    <td style="text-align:right">2,530 kg</td>
+    <td style="text-align:right">1,338 kg</td>
+  </tr>
+  
+  <tr>
+    <td>carbon footprint</td>
+    <td>1</td>
+    <td style="text-align:right">1,340 kg</td>
+    <td style="text-align:right">1,340 kg</td>
+  </tr>
+  
+  <tr>
+    <td>carbonfund</td>
+    <td>1</td>
+    <td style="text-align:right">1,900 kg</td>
+    <td style="text-align:right">1,900 kg</td>
+  </tr>
+  
+  <tr>
+    <td>carbonfund</td>
+    <td>2.7</td>
+    <td style="text-align:right">5,130 kg</td>
+    <td style="text-align:right">1,900 kg</td>
+  </tr>
+  
+  <tr>
+    <td>Carbon Neutral</td>
+    <td>1.9</td>
+    <td style="text-align:right">5,340 kg</td>
+    <td style="text-align:right">2,811 kg</td>
+  </tr>
+  
+  <tr>
+    <td>Choose climate</td>
+    <td>3</td>
+    <td style="text-align:right">5,999 kg</td>
+    <td style="text-align:right">2,000 kg</td>
+  </tr>
+  
+  <tr>
+    <td>ClimateCare</td>
+    <td>1.9</td>
+    <td style="text-align:right">2,480 kg</td>
+    <td style="text-align:right">1,305 kg</td>
+  </tr>
+  
+  <tr>
+    <td>FlyGreen</td>
+    <td>1.9</td>
+    <td style="text-align:right">2,730 kg</td>
+    <td style="text-align:right">1,437 kg</td>
+  </tr>
+  
+  <tr>
+    <td>Greentripper</td>
+    <td>1</td>
+    <td style="text-align:right">2,180 kg</td>
+    <td style="text-align:right">2,180 kg</td>
+  </tr>
+  
+  <tr>
+    <td>Greentripper</td>
+    <td>2</td>
+    <td style="text-align:right">3,990 kg</td>
+    <td style="text-align:right">1,995 kg</td>
+  </tr>
+  
+  <tr>
+    <td>ICAO</td>
+    <td>1</td>
+    <td style="text-align:right">797 kg</td>
+    <td style="text-align:right">797 kg</td>
+  </tr>
+  
+  <tr>
+    <td>myclimate</td>
+    <td>2</td>
+    <td style="text-align:right">3,000 kg</td>
+    <td style="text-align:right">1,500 kg</td>
+  </tr>
+  
+  <tr>
+    <td>myclimate-lufthansa</td>
+    <td>1</td>
+    <td style="text-align:right">1,200 kg</td>
+    <td style="text-align:right">1,200 kg</td>
+  </tr>
+  
+  <tr>
+    <td>myclimate-swiss</td>
+    <td>1</td>
+    <td style="text-align:right">1,200 kg</td>
+    <td style="text-align:right">1,200 kg</td>
+  </tr>
+  
+  <tr>
+    <td>omnicalculator flight-emissions</td>
+    <td>2</td>
+    <td style="text-align:right">5,400 kg</td>
+    <td style="text-align:right">2,700 kg</td>
+  </tr>
+  
+  <tr>
+    <td>south pole</td>
+    <td>1.9</td>
+    <td style="text-align:right">3,266 kg</td>
+    <td style="text-align:right">1,719 kg</td>
+  </tr>
+  
+  <tr>
+    <td>terrapass</td>
+    <td>1</td>
+    <td style="text-align:right">3,291 kg</td>
+    <td style="text-align:right">3,291 kg</td>
+  </tr>
+  
+</table>
+
+<p>Calculators accessed 2019-08-17
+
+<p>Some of those numbers don't make sense at the moment:
+<ul>
+<li>Greentripper offers an optional RF factor 2, but there's less than a factor two difference between their two answers.</li>
+<li>myclimate uses a factor 2 for their own calculations, but a factor 1 for calculations for swiss and lufthansa. 
+Currently that doesn't work out, but myclimate did update their calculator on 2019-08-13. 
+Changes might still be propagating.</li>
+</ul>
+</p>
+
+<p>For some calculators I wasn't able to find RF factors yet:
+<ul>
+<li>co2nsensus</li>
+<li>air new zealand</li>
+</ul>
+</p>
+
+</body>
+
+<footer>
+  2019-08-17
+  Copyright Sophie Redford
+</footer> 
+
+</html>
