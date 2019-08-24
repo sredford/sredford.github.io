@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body
+{
+background-color:#d0e4fe;
+font-family:sans-serif;
+}
+h1
+{
+color:black;
+text-align:left;
+}
+p
+{
+font-size:14px;
+  width:     500px;
+  word-wrap: break-word;
+}
+ul
+{
+font-family:sans-serif;
+font-size:14px;
+list-style-type: circle;
+padding: 0px;
+margin-left: 30px;
+margin-top:0;
+line-height: 1.5em;
+width:     500px;
+}
+table, th, td {
+  font-size:14px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+}
+th {
+  text-align: left;
+}
+h4 {
+  width:     500px;
+  word-wrap: break-word;
+}
+footer
+{
+font-size:10px;
+}
+</style>
+</head>
+<body>
+
+<h1>Radiative forcing rationale</h1>
+
+<h4>Bringing together the arguments for the different RF factors</h4>
+
+<p>To try to understand where the different RF factors come from, 
+I dug through all the calculators to see what they had to say about RF. 
+Then I tried to follow any references they made. I brought all the information here. 
+It's a long list - you can scroll through or click on the one you're interested in.</p>
+
+<p>
+Go straight to calculator summary:<br />
+<a href="#atmosfair">atmosfair</a><br />
+<a href="#brighterplanet">Brighterplanet</a><br />
+<a href="#c-level">C-Level</a><br />
+<a href="#carbonfootprint">Carbonfootprint</a><br />
+<a href="#carbonneutral">Carbon neutral</a><br />
+<a href="#carbonindependent">carbonindependent</a><br />
+<a href="#carbonfund">carbonfund</a><br />
+<a href="#chooseclimate">Choose climate</a><br />
+<a href="#climatecare">Climate care</a><br />
+<a href="#co2nsensus">Co2nsensus</a><br />
+<a href="#flygreen">Flygreen</a><br />
+<a href="#greentripper">Greentripper</a><br />
+<a href="#icao">ICAO</a><br />
+<a href="#myclimate">Myclimate</a><br />
+<a href="#myclimate-l-s">Myclimate-lufthansa and -swiss</a><br />
+<a href="#omnicalculator">Omnicalculator - flight emissions</a><br />
+<a href="#southpole">South pole</a><br />
+<a href="#terrapass">Terrapass</a><br />
+</p>
+
+<p>
+Go straight to report/article summary:<br />
+<a href="#ipcc1999">IPCC (1999)</a><br />
+<a href="#sausen2005">Sausen et al. (2005)</a><br />
+<a href="#kollmuss2009">Kollmuss &amp; Crimmins (2009)</a><br />
+<a href="#lee2010">Lee et al. (2010)</a><br />
+<a href="#jungbluth2018">Jungbluth &amp; Meili (2018)</a><br />
+<a href="#defra">UK government (2009-2019)</a><br />
+</p>
+
+<h2>Calculators</h2>
+<p>Calculators accessed 2019-08.</p>
+
+<h4 id="atmosfair">atmosfair</h4>
+<p>"In order to appropriately represent the climate impact of all 
+flight emissions, the atmosfair emissions calculator multiplies the 
+CO<sub>2</sub> emissions emitted at altitudes over 9 km with the 
+global average multiplicator of 3. This multiplicator results when 
+the global warming potential of all non-CO<sub>2</sub> effects is 
+integrated and discounted over 100 years (UNFCC) and <a href="#lee2010">
+(David Lee et al., "Transport impacts on atmosphere and climate: Aviation", 
+in atmospheric environment (44), 2010)</a>."</p>
+
+<h4 id="brighterplanet">Brighterplanet</h4>
+<p>"Aviation multiplier. A multiplier to account for the extra climate 
+impact of greenhouse gas emissions high in the atmosphere. 
+Use 2.0 after <a href="#kollmuss2009">Kollmuss and Crimmins (2009)</a>"</p>
+<!--https://github.com/faradayio/flight/blob/master/lib/flight/impact_model.rb-->
+
+<h4 id="c-level">C-Level</h4>
+<p>"The emission factors used in our calculations take radiative forcing into 
+account, which increases total emissions by 90%. Radiative forcing is the 
+increased damage caused by emissions released into the atmosphere at high 
+altitude rather than those released at sea-level."</p>
+
+<h4 id="carbonfootprint">Carbonfootprint</h4>
+<p>"Carbon emissions from planes at high altitude have an increased effect 
+on global warming. Check the box if you would like to multiply aviation emissions 
+by <a href="#defra">DEFRA</a>'s recommended Radiative Forcing factor of 1.891."</p>
+
+<p>"Emissions from planes at high altitudes impact climate change more than if the 
+emissions were released at ground level. To take account of this you have the 
+option to factor up the CO<sub>2</sub> emissions released by aviation Radiative Forcing 
+Factor of 1.9. From 2013, <a href="#defra">DEFRA</a> have include emissions factors to 
+cover radiative forcing which have been used in the online calculators."</p>
+
+<h4 id="carbonneutral">Carbon neutral</h4>
+<p>"An RFI of 1.9 is applied against CO<sub>2</sub>"</p>
+
+<p>"What is Radiative Forcing Index (RFI)?:  The <a href="#ipcc1999">IPCC</a> 
+(Intergovernmental Panel on Climate Change) has identified that aircraft emissions 
+at altitude have a greater impact on the atmosphere due to other non-CO<sub>2</sub> 
+climate change effects from aviation (e.g. NOx, water vapour, contrails) and the RFI 
+factors allows for these other impacts"</p>
+
+<h4 id="carbonindependent">carbonindependent</h4>
+<p>"Aircraft are thought to have greater climate effects than just the CO<sub>2</sub> 
+emissions from burning the fuel. The additional effects include contributions from 
+nitrous oxides and ozone. Because of this, the CO<sub>2</sub> emissions from aviation 
+should perhaps be multiplied by an appropriate factor. The size of the factor is 
+often taken to be 2.7"</p>
+<p>(long quote)</p>
+<p>"According to this statement, it is incorrect to multiply CO<sub>2</sub> emissions 
+by the RFI, but it is also incorrect to ignore them. For the purposes of a calculator, 
+some decision must be taken until further evidence is available, and the Carbon Independent 
+calculator will for the time being multiply aviation CO<sub>2</sub> emissions by a 
+factor of 2.0."</p>
+
+<h4 id="carbonfund">carbonfund</h4>
+<p>"At high altitudes, the effect of greenhouse gases is considerably different 
+than on the ground level. Aircraft also emit water vapor during flight which can 
+cause the formation of ice clouds, called contrails. Where contrails persist, 
+cirrus clouds begin to form which have an additional impact on global warming. 
+Clouds can have a double effect on radiation: they warm the earth by reducing the 
+amount of radiation from the earth that escapes into space but also cool the earth 
+by reflecting the sunís rays back into space. However, contrails lead to a net 
+warming factor, which is estimated to be 2.7 times the normal effect 
+<a href="#ipcc1999">(IPCC, 1999)</a>."</p>
+
+<h4 id="chooseclimate">Choose climate</h4>
+<p>"And remember: that's just the CO<sub>2</sub>: the total warming effect of 
+CO<sub>2</sub> + H<sub>2</sub>O + NOx is about 3 times greater."</p>
+
+<p>"The total warming effect of all emissions (CO<sub>2</sub>, H<sub>2</sub>O and NOx) 
+put together, is in the range 2-5 times greater than that of CO<sub>2</sub> alone. 
+This range was confirmed by analysis in the "Special Report on Aviation" published by 
+the "Intergovernmental Panel on Climate Change" (<a href="#ipcc1999">IPCC</a>) 
+in April 1999."</p>
+
+<h4 id="climatecare">Climate care</h4>
+<p>"Radiative Forcing Index (RFI) is a multiplier that takes account of the extra 
+gases emitted to the atmosphere when you fly at altitude – which are greater than 
+burning fossil fuels at ground level.  Scientists estimate the impact is between 
+1 and 4 times greater and it is considered best practice by <a href="#defra">Defra/DECC</a> 
+to include a multiplier of 1.9 to take account of these impacts. ClimateCare includes 
+an RFI multiplier in all our flight calculations."</p>
+
+<h4 id="co2nsensus">Co2nsensus</h4>
+<p>"CO2nnector adopts The <a href="#icao">ICAO</a> Carbon Emissions methodology by 
+The International Civil Aviation Organization for emission caused by your flights"</p>
+
+<h4 id="flygreen">Flygreen</h4>
+<p>"We chose for the calculation factors of <a href="#defra">DEFRA</a>"</p>
+<p>"This estimate is in the same order as the UK Government (<a href="#defra">DEFRA</a>) 
+and FlyGRN uses (1.9)."</p>
+
+<h4 id="greentripper">Greentripper</h4>
+<p>"Radiative forcing (RF) is caused by contrails, the white could stripes left behind 
+planes. They have an additional greenhouse effect. Independent science (Bilan Carbone, 
+ADEME) estimates that RF of aviation is 2 times that of just CO<sub>2</sub> emissions 
+from burning kerosene."</p>
+
+<h4 id="icao">ICAO</h4>
+<p>"Why does ICAO not take account of non-CO<sub>2</sub> effects in the methodology? 
+The ICAO Carbon Emissions Calculator is limited to the calculation of the CO<sub>2</sub> 
+amounts released into the atmosphere by the aircraft engines during a flight. Consequently, 
+the ICAO Emissions Calculator does not quantify the climate change impact of aircraft 
+emissions using the Radiative Forcing Index (RFI) or other such multipliers. The scientific 
+community has not yet reached consensus on the use of the RFI or other such multipliers 
+and therefore ICAO will only adopt a multiplier if and when the scientific community reaches 
+a general agreement on this issue. ICAO is working in collaboration with IPCC on this subject 
+and will adapt a multiplier methodology in due course accordingly."</p>
+
+<h4 id="myclimate">Myclimate</h4>
+<p>"Aircrafts do not only emit CO<sub>2</sub> but also other forcing agents that affect 
+the Earth’s radiative balance and thus the climate. Amongst other factors, emissions 
+from aviation also lead to short-term increases in tropospheric ozone as a consequence 
+of nitrogen oxide (NOx) emissions, initiate condensation trails (contrails) and may 
+affect the formation of cirrus clouds. The total radiative effects have thus been estimated 
+to be two to four times larger than the direct CO<sub>2</sub> radiative forcing. However, 
+research is ongoing inorder to constrain the uncertainties. Furthermore, a comparison of 
+CO<sub>2</sub> and non-CO<sub>2</sub> effects is particularly challenging as they act on 
+different time scales. Still, ignoring these effects would not be a far-sighted scientific 
+approach. Latest studies <a href="#jungbluth2018">(Jungbluth &amp; Meili 2018)</a>, based 
+on the correct interpretation of the most recent scientific publications, recommend an RFI 
+factor of 2 on total aircraft CO<sub>2</sub> emissions. This substantiates the myclimate 
+calculations, as myclimate already decided to multiply the estimated CO<sub>2</sub> emissions 
+by a factor of 2 (referred to as multiplier) to account for the warming effect due to 
+non-CO<sub>2</sub> aircraft emissions (<a href="#jungbluth2018">Jungbluth &amp; Meili 2018</a>, 
+<a href="#kollmuss2009">Kollmuss &amp; Crimmins 2009</a>)."</p>
+
+<h4 id="myclimate-l-s">Myclimate-lufthansa and -swiss</h4>
+<p>"Besides CO<sub>2</sub>, are any other emissions included in the calculation 
+of the offset amount? No, only CO<sub>2</sub> emissions are included in the 
+Lufthansa/SWISS calculator. This is because in science there is only a clear certainty 
+with regard to the aviation sector about the climate impact of CO<sub>2</sub> emissions. 
+However, after calculating the CO<sub>2</sub> emissions each customer has the option of 
+varying the payment by clicking on "I'd rather donate a different amount instead"."</p>
+
+<p>"In addition to CO<sub>2</sub>, air transport also produces further emissions 
+(especially nitrogen oxides and water vapour) that are believed to contribute to climate 
+change. Science has not yet, however, been able to determine the precise extent of their 
+contribution here. In view of this, the emissions calculator that myclimate provides for 
+SWISS and Lufthansa does not consider any other types of emission apart from carbon dioxide."</p>
+
+<h4 id="omnicalculator">Omnicalculator - flight emissions</h4>
+<p>"Radiative forcing factor: finally, the emission takes place high in the atmosphere, 
+and that's precisely where we don't want the CO<sub>2</sub> to be because of its greenhouse 
+effect. To account for that, we include a radiative forcing factor. We take its value to be 2, 
+based again on the analysis from <a href="#carbonindependent">www.carbonindependent.org</a>."</p>
+
+<h4 id="southpole">South pole</h4>
+<p>"Finally, South Pole’s methodology also takes into account indirect emissions such as ... 
+and a Radiative Forcing Index (RFI) multiplier of 1.9 to account for non-CO<sub>2</sub> 
+climate change effects from air travel. This includes contrails, water vapour, NOx 
+emissions, etc. <a href="#defra">UKBEIS</a> recommends a multiplier of 1.9 as a central 
+estimate, based on research from the European Assessment of Transport Impacts on Climate 
+Change and Ozone Depletion (ATTICA, http://ssa-attica.eu) and analysis by Lee et al (2009) 
+reported on by the Committee on Climate4Change (2009)."</p>
+
+<h4 id="terrapass">Terrapass</h4>
+<p>"For a variety of reasons, greenhouse gas emissions created high in the atmosphere are 
+thought by scientists to be worse than greenhouse gas emissions at ground level. This is 
+sometimes referred to as Radiative Forcing. Unfortunately, no consensus yet exists as to 
+how much worse, so presently terrapass doesn’t take this effect into account. If and when 
+a scientific consensus on radiative forcing develops, we will update our calculations accordingly."</p>
+
+<h2>Reports and Articles</h2>
+
+<h4 id="ipcc1999">IPCC, Aviation and the Global Atmosphere (1999)</h4>
+<p>Summary for policymakers 4.8. What are the Overall Climate Effects of Subsonic Aircraft?<br />
+"the overall radiative forcing by aircraft (excluding that from changes in cirrus clouds) 
+for all scenarios in this report is a factor of 2 to 4 larger than the forcing 
+by aircraft carbon dioxide alone"</p>
+
+<p>Chapter 6 Executive summary<br />
+"The Radiative Forcing Index (RFI)-the ratio of total radiative forcing to that from 
+CO<sub>2</sub> emissions alone-is a measure of the importance of aircraft-induced climate 
+change other than that from the release of fossil carbon alone. In 1992, the RFI for aircraft 
+is 2.7; it evolves to 2.6 in 2050 for the Fa1 scenario. This index ranges from 2.2 to 3.4 for 
+the year 2050 for various E- and F-type scenarios for subsonic aviation and technical options 
+considered here. The RFI increases from 2.6 to 3.4 with the addition of HSCTs (scenario Fa1H), 
+primarily as a result of the effects of stratospheric water vapor. Thus, aircraft-induced climate 
+change with RFI > 1 points to the need for a more thorough climate assessment for this sector. 
+By comparison, in the IS92a scenario the RFI for all human activities is about 1, although for 
+greenhouse gases alone it is about 1.5, and it is even higher for sectors emitting CH<sub>4</sub> 
+and N<sub>2</sub>O without significant fossil fuel use."</p>
+
+<p>6.6.5. Climate Change<br />
+"In 1992, the RFI for aircraft was about 2.7, with an uncertainty of at least &plusmn;1.5. 
+The RFI changes to 3.0 by 2015 then drops to 2.6 for the Fa1 scenario (see Table 6-1). This 
+index ranges from 2.2 to 3.4 in the year 2050 for the various E- and F-type scenarios for subsonic 
+aviation and technical options considered here. The RFI increases from 2.6 to 3.4 with the addition 
+of HSCT aircraft (scenario Fa1H), as a result of the effects of stratospheric water vapor."</p>
+
+<h4 id="sausen2005">Sausen et al., Aviation radiative forcing in 2000: An update on IPCC (1999) (2005)</h4>
+<p>Quoting the DEFRA interpretation of this paper:<br />
+"Estimates for scaling CO<sub>2</sub> emissions to account for Radiative Forcing 
+impacts are not quoted directly in the table, but are derived as follows:<br />
+IPCC (1999) = 48.5/18.0 = 2.69 ≈ 2.7<br />
+TRADEOFF = 47.8/25.3 = 1.89 ≈ 1.9"</p>
+
+<h4 id="kollmuss2009">Kollmus &amp; Crimmins, Carbon Offsetting &amp; Air Travel 
+Part 2: Non-CO<sub>2</sub> Emissions Calculations (2009)</h4>
+<p>"a multiplier of 2 or greater should be used for air travel emissions calculators 
+to account for non-CO<sub>2</sub> warming effects"</p>
+
+<h4 id="lee2010">Lee et al., Transport impacts on atmosphere and climate: Aviation (2010)</h4>
+<p>"Emission-based metrics such as the GWP and GTP have been reviewed and formulated 
+into CO<sub>2</sub>-equivalent emissions. The value of these depends on the time-horizon 
+selected. Emissions weighting factors that represent the total effect of aviation as a 
+ratio to that of CO<sub>2</sub> have been calculated and presented for GWPs and GTP 
+metrics and different time-horizons. For GWPs, these range from 4.3 to 4.8 (GWP20) and 
+1.9–2.0 (GWP100) for 2005, including AIC; excluding AIC they are 2.1–2.6 (GWP20) and 
+1.3–1.4 (GWP100). In the context of these calculations, AIC has a similar uncertainty 
+to aviation NOx GWPs, given that the few different estimates change in sign."</p>
+
+<h4 id="jungbluth2018">Jungbluth &amp; Meili, Recommendations for calculation of the 
+global warming potential of aviation including the radiative forcing index (2018)</h4>
+<p>"An RFI factor of 2 on total aircraft CO<sub>2</sub> emissions is recommended 
+in this article because it is based on the correct interpretation of the most recent 
+scientific publications. If detailed data on the share of emissions in the higher 
+atmosphere are available, calculations will be more accurate if the CO<sub>2</sub> 
+emissions in the higher atmosphere are multiplied by a factor of 5.2."<br />
+Where "higher atmosphere" seems to be the stratosphere. The height that the stratosphere 
+starts depends on where you are. From wikipedia: "Near the equator, the stratosphere 
+starts at as high as 20 km, around 10 km at midlatitudes, and at about 7 km at the poles."</p>
+
+<h4 id="defra">UK government (2009-2019)</h4>
+<p>Every year the UK government publishes emission conversion factors for greenhouse 
+gas company reporting. Depending on the year, the department can be called BEIS (2016-2019), 
+DECC (2014-2015) or DEFRA (2009-2013). I looked back as far as possible and picked 
+out the relevant bits:</p>
+
+<p>2014-2019<br />
+"A multiplier of 1.9 is recommended as a central estimate"<br />
+"It is important to note that the value of this 1.9 multiplier is subject to significant uncertainty"<br />
+Reference <a href="#sausen2005">Sausen et al. (2005)</a></p>
+
+<p>2010-2013<br />
+"A multiplier of 1.9 is recommended as a central estimate"<br />
+Reference <a href="#sausen2005">Sausen et al. (2005)</a></p>
+
+<p>2009<br />
+"The appropriate factor to apply is subject to uncertainty but was estimated by the 
+<a href="#ipcc1999">IPCC in 1999</a> to be in the range 2-4, with current best scientific 
+evidence suggesting a factor of 1.9."</p>
+
+</body>
+
+<footer>
+  2019-08-24
+  Copyright Sophie Redford
+</footer> 
+
+</html>
