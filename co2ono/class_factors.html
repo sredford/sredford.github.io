@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body
+{
+background-color:#d0e4fe;
+font-family:sans-serif;
+}
+h1
+{
+color:black;
+text-align:left;
+}
+p
+{
+font-size:14px;
+  width:     500px;
+  word-wrap: break-word;
+}
+ul
+{
+font-family:sans-serif;
+font-size:14px;
+list-style-type: circle;
+padding: 0px;
+margin-left: 30px;
+margin-top:0;
+line-height: 1.5em;
+width:     500px;
+}
+table, th, td {
+  font-size:14px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+}
+th {
+  text-align: left;
+}
+h4 {
+  width:     500px;
+  word-wrap: break-word;
+}
+footer
+{
+font-size:10px;
+}
+</style>
+</head>
+<body>
+
+<h1>Seating class factors</h1>
+
+<h4>More legroom means more emissions</h4>
+
+<p>Most calculators ask for the seating class, but why does this matter? 
+Doesn't the plane emit the same amount of CO<sub>2</sub> regardless? 
+While that's true, a passenger who upgrades from economy to business 
+increases the fraction of the total emissions that they are responsible for.</p>
+
+<p>Imagine: were a whole plane to be filled with economy seats, it could fit 
+some maximum number of passengers. One of the many passengers is responsible 
+for only a small fraction of the total emissions. Fill the same plane with 
+first class seats and the capacity is much reduced. The same total emissions 
+are divided by a only a few passengers, so each one is responsible for a much 
+larger fraction. (It's an approximation that the total emissions stay the same. 
+Changing the type of seat, number of seats, and number of passengers will slightly 
+change the weight of the plane.)</p>
+
+<p>The two tables below show the effect of changing the seating class for long- 
+and short-haul flights in several different calculators. The absolute amounts of 
+emissions aren't important here, neither are the units, nor the RF factor. 
+What's interesting is the difference between economy, business, first.</p>
+
+<p>A clear set of common factors emerges:</p>
+<ul>
+<li>Short-haul: Business, First = 1.5 x Economy</li>
+<li>Long-haul: Premium economy = 1.6 x Economy</li>
+<li>Long-haul: Business = 2.9 x Economy</li>
+<li>Long-haul: First = 4.0 x Economy</li>
+</ul>
+<p>These factors feature in the UK government's greenhouse gas conversion factors, 
+and are an average over all cabin layouts of all airlines. With more information 
+(guessed or given) on the airline and/or aircraft, a more accurate factor could 
+be calculated. </p>
+
+<table>
+  <caption>Long-haul, round trip, ZRH to PVG, one passenger</caption>
+  <tr>
+    <th>Calculator</th>
+    <th>Economy</th>
+    <th>PremiumE (xE)</th> 
+    <th>Business (xE)</th>
+    <th>First (xE)</th>
+  </tr>
+  
+  <tr>
+    <td>atmosfair</td>
+    <td style="text-align:right">5.306</td>
+    <td style="text-align:right">6.765 (1.3)</td>
+    <td style="text-align:right">9.948 (1.9)</td>
+    <td style="text-align:right">13.264 (2.5)</td>
+  </tr>
+  
+  <tr>
+    <td>brighterplanet</td>
+    <td style="text-align:right">2930.64</td>
+    <td style="text-align:right">4688.14 (1.6)</td>
+    <td style="text-align:right">8497.12 (2.9)</td>
+    <td style="text-align:right">11721.75 (4.0)</td>
+  </tr>
+  
+  <tr>
+    <td>C-Level</td>
+    <td style="text-align:right">2.94</td>
+    <td style="text-align:right"></td>
+    <td style="text-align:right">8.52 (2.9)</td>
+    <td style="text-align:right">11.75 (4.0)</td>
+  </tr>
+  
+  <tr>
+    <td>carbon footprint</td>
+    <td style="text-align:right">1.32</td>
+    <td style="text-align:right">2.12 (1.6)</td>
+    <td style="text-align:right">3.84 (2.9)</td>
+    <td style="text-align:right">5.29 (4.0)</td>
+  </tr>
+    
+  <tr>
+    <td>Carbon Neutral</td>
+    <td style="text-align:right">5.34</td>
+    <td style="text-align:right">8.55 (1.6)</td>
+    <td style="text-align:right">15.49 (2.9)</td>
+    <td style="text-align:right">21.37 (4.0)</td>
+  </tr>
+  
+  <tr>
+    <td>Choose climate</td>
+    <td style="text-align:right">1997</td>
+    <td style="text-align:right"></td>
+    <td style="text-align:right">2981 (1.5)</td>
+    <td style="text-align:right"></td>
+  </tr>
+  
+  <tr>
+    <td>ClimateCare</td>
+    <td style="text-align:right">2.48</td>
+    <td style="text-align:right">3.96 (1.6)</td>
+    <td style="text-align:right">7.18 (2.9)</td>
+    <td style="text-align:right">9.91 (4.0)</td>
+  </tr>
+ 
+ <tr>
+    <td>co2nsensus</td>
+    <td style="text-align:right">2.7290</td>
+    <td style="text-align:right"></td>
+    <td style="text-align:right">7.915 (2.9)</td>
+    <td style="text-align:right">10.917 (4.0)</td>
+  </tr>
+  
+  <tr>
+    <td>FlyGreen</td>
+    <td style="text-align:right">2.73</td>
+    <td style="text-align:right"></td>
+    <td style="text-align:right">7.92 (2.9)</td>
+    <td style="text-align:right">10.92 (4.0)</td>
+  </tr>
+  
+  <tr>
+    <td>Greentripper</td>
+    <td style="text-align:right">2.18</td>
+    <td style="text-align:right"></td>
+    <td style="text-align:right">4.73 (2.2)</td>
+    <td style="text-align:right">7.15 (3.3)</td>
+  </tr>
+  
+  <tr>
+    <td>ICAO</td>
+    <td style="text-align:right">0.7972</td>
+    <td style="text-align:right"></td>
+    <td style="text-align:right">1.5944 (2.0)</td>
+    <td style="text-align:right">1.5944 (2.0)</td>
+  </tr>
+  
+  <tr>
+    <td>myclimate</td>
+    <td style="text-align:right">3.0</td>
+    <td style="text-align:right"></td>
+    <td style="text-align:right">5.7 (1.9)</td>
+    <td style="text-align:right">8.8 (2.9)</td>
+  </tr>
+  
+  <tr>
+    <td>myclimate-lufthansa</td>
+    <td style="text-align:right">1.2</td>
+    <td style="text-align:right">1.7 (1.4)</td>
+    <td style="text-align:right">2.6 (2.2)</td>
+    <td style="text-align:right">3.8 (3.2)</td>
+  </tr>
+  
+  <tr>
+    <td>myclimate-swiss</td>
+    <td style="text-align:right">1.2</td>
+    <td style="text-align:right"></td>
+    <td style="text-align:right">2.6 (2.2)</td>
+    <td style="text-align:right">3.8 (3.2)</td>
+  </tr>
+  
+  <tr>
+    <td>south pole</td>
+    <td style="text-align:right">3.266</td>
+    <td style="text-align:right">5.226 (1.6)</td>
+    <td style="text-align:right">9.471 (2.9)</td>
+    <td style="text-align:right">13.064 (4.0)</td>
+  </tr>
+  
+</table>
+
+<br/>
+
+<table>
+  <caption>Short-haul, round trip, ZRH to LHR, one passenger</caption>
+  <tr>
+    <th>Calculator</th>
+    <th>Economy</th>
+    <th>PremiumE (xE)</th> 
+    <th>Business (xE)</th>
+    <th>First (xE)</th>
+  </tr>
+  
+  <tr>
+    <td>atmosfair</td>
+    <td style="text-align:right">331</td>
+    <td style="text-align:right">422 (1.3)</td>
+    <td style="text-align:right">621 (1.9)</td>
+    <td style="text-align:right">828 (2.5)</td>
+  </tr>
+  
+  <tr>
+    <td>brighterplanet</td>
+    <td style="text-align:right">480.33</td>
+    <td style="text-align:right">503.92 (1.1)</td>
+    <td style="text-align:right">720.25 (1.5)</td>
+    <td style="text-align:right">720.25 (1.5)</td>
+  </tr>
+  
+  <tr>
+    <td>C-Level</td>
+    <td style="text-align:right">0.25</td>
+    <td style="text-align:right"></td>
+    <td style="text-align:right">0.37 (1.5)</td>
+    <td style="text-align:right">0.37 (1.5)</td>
+  </tr>
+  
+  <tr>
+    <td>carbon footprint</td>
+    <td style="text-align:right">0.13</td>
+    <td style="text-align:right">0.13 (1.0)</td>
+    <td style="text-align:right">0.2 (1.5)</td>
+    <td style="text-align:right">0.2 (1.5)</td>
+  </tr>
+    
+  <tr>
+    <td>Carbon Neutral</td>
+    <td style="text-align:right">0.42</td>
+    <td style="text-align:right">0.42 (1.0)</td>
+    <td style="text-align:right">0.42 (1.0)</td>
+    <td style="text-align:right">0.42 (1.0)</td>
+  </tr>
+  
+  <tr>
+    <td>Choose climate</td>
+    <td style="text-align:right">305</td>
+    <td style="text-align:right"></td>
+    <td style="text-align:right">455 (1.5)</td>
+    <td style="text-align:right"></td>
+  </tr>
+  
+  <tr>
+    <td>ClimateCare</td>
+    <td style="text-align:right">0.26</td>
+    <td style="text-align:right">0.26 (1.0)</td>
+    <td style="text-align:right">0.39 (1.5)</td>
+    <td style="text-align:right">0.39 (1.5)</td>
+  </tr>
+ 
+ <tr>
+    <td>co2nsensus</td>
+    <td style="text-align:right">249</td>
+    <td style="text-align:right"></td>
+    <td style="text-align:right">374 (1.5)</td>
+    <td style="text-align:right">374 (1.5)</td>
+  </tr>
+  
+  <tr>
+    <td>FlyGreen</td>
+    <td style="text-align:right">0.25</td>
+    <td style="text-align:right"></td>
+    <td style="text-align:right">0.37 (1.5)</td>
+    <td style="text-align:right">0.95 (3.8)</td>
+  </tr>
+  
+  <tr>
+    <td>Greentripper</td>
+    <td style="text-align:right">0.27</td>
+    <td style="text-align:right"></td>
+    <td style="text-align:right">0.59 (2.2)</td>
+    <td style="text-align:right">0.89 (3.3)</td>
+  </tr>
+  
+  <tr>
+    <td>ICAO</td>
+    <td style="text-align:right">188.8</td>
+    <td style="text-align:right"></td>
+    <td style="text-align:right">188.8 (1.0)</td>
+    <td style="text-align:right">188.8 (1.0)</td>
+  </tr>
+  
+  <tr>
+    <td>myclimate</td>
+    <td style="text-align:right">0.372</td>
+    <td style="text-align:right"></td>
+    <td style="text-align:right">0.480 (1.3)</td>
+    <td style="text-align:right">0.893 (2.4)</td>
+  </tr>
+  
+  <tr>
+    <td>myclimate-lufthansa</td>
+    <td style="text-align:right">0.179</td>
+    <td style="text-align:right">0.209 (1.2)</td>
+    <td style="text-align:right">0.235 (1.3)</td>
+    <td style="text-align:right">0.475 (2.7)</td>
+  </tr>
+  
+  <tr>
+    <td>myclimate-swiss</td>
+    <td style="text-align:right">0.179</td>
+    <td style="text-align:right"></td>
+    <td style="text-align:right">0.235 (1.3)</td>
+    <td style="text-align:right">0.475 (2.7)</td>
+  </tr>
+  
+  <tr>
+    <td>south pole</td>
+    <td style="text-align:right">0.279</td>
+    <td style="text-align:right">0.279 (1.0)</td>
+    <td style="text-align:right">0.419 (1.5)</td>
+    <td style="text-align:right">0.419 (1.5)</td>
+  </tr>
+  
+</table>
+
+<p>Calculators accessed 2019-09-01.</p>
+
+</body>
+
+<footer>
+  2019-09-01
+  Copyright Sophie Redford
+</footer> 
+
+</html>
