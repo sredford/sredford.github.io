@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body
+{
+background-color:#d0e4fe;
+font-family:sans-serif;
+}
+h1
+{
+color:black;
+text-align:left;
+}
+p
+{
+font-size:14px;
+  width:     500px;
+  word-wrap: break-word;
+}
+ul
+{
+font-family:sans-serif;
+font-size:14px;
+list-style-type: circle;
+padding: 0px;
+margin-left: 30px;
+margin-top:0;
+line-height: 1.5em;
+width:     500px;
+}
+table, th, td {
+  font-size:14px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+}
+th {
+  text-align: left;
+}
+h4 {
+  width:     500px;
+  word-wrap: break-word;
+}
+footer
+{
+font-size:10px;
+}
+</style>
+</head>
+<body>
+
+<h1>Flight distance</h1>
+
+<h4>Traveling on the great circle</h4>
+
+<p>Some calculators report the flight distance they calculate. 
+Surely on this basic point they must all agree? Not quite. 
+In their defence, it turns out that calculating the shortest 
+path around the surface of an ellipsoid isn't straightforward. 
+Moreover, the plane won't fly exactly on that line. Detour and 
+holding pattern distances may or may not be included in the 
+estimates reported here. Still, once again the variety in 
+answers is surprising.</p>
+
+<p>The table below shows the distance estimates for several 
+emission calculators, in addition to some distance calculators, 
+for a few different routes. The distance calculators are very 
+much in sync. The emission calculators less so. Still, the 
+largest variation here is well within 10%, making flight distance 
+relatively well defined in comparison to the multiplicative 
+factors involved with seating class or radiative forcing.</p>
+
+<table>
+  <caption>One way distance (km)</caption>
+  <tr>
+    <th>Calculator</th>
+    <th>ZRH to PVG</th>
+    <th>ZRH to LHR</th> 
+    <th>ZRH to CPT</th>
+    <th>ZRH to JFK</th>
+  </tr>
+  
+  <tr>
+    <td>atmosfair</td>
+    <td style="text-align:right">9,078</td>
+    <td style="text-align:right">835</td>
+    <td style="text-align:right">9,161</td>
+    <td style="text-align:right">6,355</td>
+  </tr>
+  
+  <tr>
+    <td>C-Level</td>
+    <td style="text-align:right">9,024</td>
+    <td style="text-align:right">778</td>
+    <td style="text-align:right">9,106</td>
+    <td style="text-align:right">6,333</td>
+  </tr>
+  
+  <tr>
+    <td>Carbonfund</td>
+    <td style="text-align:right">9,051</td>
+    <td style="text-align:right">793</td>
+    <td style="text-align:right">9,163</td>
+    <td style="text-align:right">6,346</td>
+  </tr>
+  
+  <tr>
+    <td>ClimateCare</td>
+    <td style="text-align:right">9,031</td>
+    <td style="text-align:right">788</td>
+    <td style="text-align:right">9,110</td>
+    <td style="text-align:right">6,309</td>
+  </tr>
+ 
+ <tr>
+    <td>ClimateCare - ANZ</td>
+    <td style="text-align:right">9,031</td>
+    <td style="text-align:right">788</td>
+    <td style="text-align:right">9,110</td>
+    <td style="text-align:right">6,310</td>
+  </tr>
+  
+  <tr>
+    <td>FlyGreen</td>
+    <td style="text-align:right">9,031</td>
+    <td style="text-align:right">788</td>
+    <td style="text-align:right">9,110</td>
+    <td style="text-align:right">6,309</td>
+  </tr>
+  
+  <tr>
+    <td>ICAO</td>
+    <td style="text-align:right">9,028</td>
+    <td style="text-align:right">785</td>
+    <td style="text-align:right">9,102</td>
+    <td style="text-align:right">6,305</td>
+  </tr>
+  
+  <tr>
+    <td>myclimate</td>
+    <td style="text-align:right">9,000</td>
+    <td style="text-align:right">800</td>
+    <td style="text-align:right">9,100</td>
+    <td style="text-align:right">6,300</td>
+  </tr>
+  
+  <tr>
+    <td>myclimate-lufthansa</td>
+    <td style="text-align:right">9,000</td>
+    <td style="text-align:right">800</td>
+    <td style="text-align:right">9,100</td>
+    <td style="text-align:right">6,300</td>
+  </tr>
+  
+  <tr>
+    <td>myclimate-swiss</td>
+    <td style="text-align:right">9,000</td>
+    <td style="text-align:right">800</td>
+    <td style="text-align:right">9,100</td>
+    <td style="text-align:right">6,300</td>
+  </tr>
+  
+  <tr>
+    <td>gcmap</td>
+    <td style="text-align:right">9,051</td>
+    <td style="text-align:right">790</td>
+    <td style="text-align:right">9,075</td>
+    <td style="text-align:right">6,326</td>
+  </tr>
+  
+  <tr>
+    <td>greatcirclemapper</td>
+    <td style="text-align:right">9,051</td>
+    <td style="text-align:right">790</td>
+    <td style="text-align:right">9,074</td>
+    <td style="text-align:right">6,326</td>
+  </tr>
+  
+    <tr>
+    <td>greatcirclemap</td>
+    <td style="text-align:right">9,051</td>
+    <td style="text-align:right">790</td>
+    <td style="text-align:right">9,075</td>
+    <td style="text-align:right">6,326</td>
+  </tr>
+  
+</table>
+
+<p>Calculators accessed 2019-09-07.</p>
+
+</body>
+
+<footer>
+  2019-09-07
+  Copyright Sophie Redford
+</footer> 
+
+</html>
