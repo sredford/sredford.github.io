@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body
+{
+background-color:#d0e4fe;
+font-family:sans-serif;
+}
+h1
+{
+color:black;
+text-align:left;
+}
+p
+{
+font-size:14px;
+  width:     500px;
+  word-wrap: break-word;
+}
+ul
+{
+font-family:sans-serif;
+font-size:14px;
+list-style-type: circle;
+padding: 0px;
+margin-left: 30px;
+margin-top:0;
+line-height: 1.5em;
+width:     500px;
+}
+table, th, td {
+  font-size:14px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+}
+th {
+  text-align: left;
+}
+h4 {
+  width:     500px;
+  word-wrap: break-word;
+}
+footer
+{
+font-size:10px;
+}
+</style>
+</head>
+<body>
+
+<h1>Plane speaking</h1>
+
+<h4>Effect of aircraft model on emissions</h4>
+
+<p>The atmosfair emissions calculator allows the aircraft model 
+to be selected from a list of possibilities. The histograms 
+below show the calculated emissions for a short-haul and a long-haul 
+flight, single passenger, economy, round trip varying only the 
+aircraft model. Atmosfair itself checks that the selected aircraft 
+model has sufficient range to cover the selected flight distance - 
+that's why there are less entries in the long-haul trip. Additionally, 
+I removed a couple of aircraft models that seemed too 'private planey'. 
+Still, there's easily a factor two difference here. It will be 
+interesting to look into where these differences come from.</p>
+
+<p>To illustrate how much the aircraft model can vary for a specific 
+route: The twelve direct Swiss or BA flights ZRH-LHR on 2019-09-29 
+involve seven different aircraft models: Airbus A319, Airbus A320-100/200, 
+Airbus A320neo, Airbus A320 (sharklets), Airbus A321-100/200, 
+Bombardier CS100 and Bombardier CS300. Calculating the CO<sub>2</sub> 
+emissions without knowing the aircraft model adds alot of uncertainty.</p>
+
+<img src="plots/aircraftType_ZRH-LHR.png" alt="shorthaulplot">
+
+<img src="plots/aircraftType_ZRH-PVG.png" alt="longhaulplot">
+
+<p>Calculators accessed 2019-09-15.</p>
+
+</body>
+
+<footer>
+  2019-09-15
+  Copyright Sophie Redford
+</footer> 
+
+</html>
