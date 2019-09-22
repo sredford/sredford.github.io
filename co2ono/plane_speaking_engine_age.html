@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body
+{
+background-color:#d0e4fe;
+font-family:sans-serif;
+}
+h1
+{
+color:black;
+text-align:left;
+}
+p
+{
+font-size:14px;
+  width:     500px;
+  word-wrap: break-word;
+}
+ul
+{
+font-family:sans-serif;
+font-size:14px;
+list-style-type: circle;
+padding: 0px;
+margin-left: 30px;
+margin-top:0;
+line-height: 1.5em;
+width:     500px;
+}
+table, th, td {
+  font-size:14px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+}
+th {
+  text-align: left;
+}
+h4 {
+  width:     500px;
+  word-wrap: break-word;
+}
+footer
+{
+font-size:10px;
+}
+</style>
+</head>
+<body>
+
+<h1>Plane speaking</h1>
+
+<h4>Turbofan vs turboprop vs age</h4>
+
+<p>Seeing the <a href="plane_speaking.html"style="color:blue;text-decoration:none;">large spread</a> 
+of CO<sub>2</sub> emissions depending on aircraft type made me wonder 
+- what variables are at work here? A couple of nice results came up.</p>
+
+<p>Considering short haul flights, the distribution of emissions has 
+a cluster of entries in the 100-200 kg CO<sub>2</sub> range. 
+Interestingly, most of these models are turboprops - aircraft from the 
+1980's and 90's with propellers rather than 'jet engines'. Only the most 
+recent generation of turbofan aircraft can match such low emissions per 
+passenger, such as the Airbus A319/A320/A321 neo (new engine option) or 
+the Boeing 737 MAX 7/8/9 or 747-8I.</p>
+
+<img src="plots/aircraftType_ZRH-LHR_engine.png" alt="shorthaulengineplot">
+
+<br>  
+  
+<img src="plots/aircraftType_ZRH-LHR_engine_year.png" alt="shorthaulageplot">
+
+<p> Considering long haul flights, where all the aircraft have turbofan 
+engines, there's a nice correlation between the year of the first service 
+flight of the aircraft and its emissions. Of course, date of first service 
+flight doesn't correlate directly with engine model, and doesn't mean 
+that the aircraft hasn't been upgraded in the meantime.</p>
+
+<img src="plots/aircraftType_ZRH-PVG_year.png" alt="longhaulageplot">
+
+</body>
+
+<footer>
+  2019-09-22
+  Copyright Sophie Redford
+</footer> 
+
+</html>
