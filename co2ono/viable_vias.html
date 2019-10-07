@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body
+{
+background-color:#d0e4fe;
+font-family:sans-serif;
+}
+h1
+{
+color:black;
+text-align:left;
+}
+p
+{
+font-size:14px;
+  width:     500px;
+  word-wrap: break-word;
+}
+ul
+{
+font-family:sans-serif;
+font-size:14px;
+list-style-type: circle;
+padding: 0px;
+margin-left: 30px;
+margin-top:0;
+line-height: 1.5em;
+width:     500px;
+}
+table, th, td {
+  font-size:12px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 3px;
+}
+th {
+  text-align: left;
+  font-weight: normal;
+  font-size: 11px;
+}
+h4 {
+  width:     500px;
+  word-wrap: break-word;
+}
+footer
+{
+font-size:10px;
+}
+</style>
+</head>
+<body>
+
+<h1>Viable vias</h1>
+
+<h4>Checking 2 + 2 = 4</h4>
+
+<p>Some calculators allow a 'via' airport to be input. 
+I thought it would be a good check to see if 'via' gives 
+the same result as the sum of the two direct legs, eg: 
+ZRH-PRG-PVG vs ZRH-PRG + PRG-PVG. To think of a reason 
+how these two numbers could be different really requires 
+some gymnastics, like, 'via' happens on one fuel efficient 
+airline whereas two direct legs happen on different, less 
+fuel efficient airlines. We also have to be aware of 
+rounding errors and precision, since some calculators 
+give emissions to the nearest 10 kg. As we see in the table 
+below, mostly but not always the 'via' result is consistent 
+with the sum of the two direct legs.</p>
+
+<table>
+  <caption>One way, economy class, one passenger. 
+  CO<sub>2</sub> emissions [kg] of the 'via' route minus 
+  the sum of the CO<sub>2</sub> emissions [kg] of the two 
+  direct legs. Gray shows inconsistent results.</caption>
+  
+  <tr>
+    <th>Calculator</th>
+    <th>ZRH-PRG-PVG</th> 
+    <th>SOU-MAN-EDI</th>
+    <th>EDI-BUD-IST</th> 
+    <th>JFK-ORD-SFO</th>
+    <th>EWR-KEF-SVO</th>
+  </tr>
+
+  <tr>
+    <td>atmosfair</td>
+    <td align="center">0 &plusmn; 1</td>
+    <td align="center">0 &plusmn; 1</td>
+    <td align="center">0 &plusmn; 1</td>
+    <td align="center">0 &plusmn; 1</td>
+	<td align="center">0 &plusmn; 1</td>
+  </tr>
+
+  <tr>
+    <td>carbon footprint</td>
+    <td align="center">0 &plusmn; 10</td>
+    <td align="center">0 &plusmn; 10</td>
+    <td align="center">0 &plusmn; 10</td>
+    <td align="center">-10 &plusmn; 10</td>
+	<td align="center">0 &plusmn; 10</td>
+  </tr>
+  
+  <tr>
+    <td>ClimateCare</td>
+    <td align="center">0 &plusmn; 10</td>
+    <td align="center">0 &plusmn; 5</td>
+    <td align="center">10 &plusmn; 10</td>
+    <td align="center">10 &plusmn; 10</td>
+	<td align="center">-10 &plusmn; 10</td>
+  </tr>
+  
+  <tr>
+    <td>FlyGreen</td>
+    <td align="center">-10 &plusmn; 10</td>
+    <td align="center">0 &plusmn; 10</td>
+    <td align="center">-10 &plusmn; 01</td>
+    <td align="center">0 &plusmn; 10</td>
+	<td align="center">0 &plusmn; 10</td>
+  </tr>
+  
+  <tr>
+    <td>myclimate</td>
+    <td align="center">-49 &plusmn; 50</td>
+    <td align="center" style="background-color:gray">-6 &plusmn; 1</td>
+    <td align="center" style="background-color:gray">-6 &plusmn; 1</td>
+    <td align="center" style="background-color:gray">-7 &plusmn; 1</td>
+	<td align="center">43 &plusmn; 50</td>
+  </tr>
+  
+  <tr>
+    <td>mcl-luft/swiss</td>
+    <td align="center">0 &plusmn; 1</td>
+    <td align="center">0 &plusmn; 1</td>
+    <td align="center">0 &plusmn; 1</td>
+    <td align="center">-1 &plusmn; 1</td>
+	<td align="center">0 &plusmn; 1</td>
+  </tr>
+  
+  <tr>
+    <td>south pole</td>
+    <td align="center" style="background-color:gray">2 &plusmn; 1</td>
+    <td align="center" style="background-color:gray">-89 &plusmn; 1</td>
+    <td align="center">0 &plusmn; 1</td>
+    <td align="center" style="background-color:gray">14 &plusmn; 1</td>
+	<td align="center" style="background-color:gray">12 &plusmn; 1</td>
+  </tr>
+  
+</table>
+
+<p>Calculators accessed 2019-10-06.</p>
+
+</body>
+
+<footer>
+  2019-10-07
+  Copyright Sophie Redford
+</footer> 
+
+</html>
