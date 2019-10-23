@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body
+{
+background-color:#d0e4fe;
+font-family:sans-serif;
+}
+h1
+{
+color:black;
+text-align:left;
+}
+p
+{
+font-size:14px;
+  width:     500px;
+  word-wrap: break-word;
+}
+ul
+{
+font-family:sans-serif;
+font-size:14px;
+list-style-type: circle;
+padding: 0px;
+margin-left: 30px;
+margin-top:0;
+line-height: 1.5em;
+}
+table, th, td {
+  font-size:14px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+}
+th {
+  text-align: left;
+}
+h4 {
+  width:     500px;
+  word-wrap: break-word;
+}
+footer
+{
+font-size:10px;
+}
+</style>
+</head>
+<body>
+
+<h1>Going nowhere fast</h1>
+
+<h4>Emissions of a zero distance flight</h4>
+
+<p>Just to see if it would work, I tried out the calculators for 
+a zero distance flight. Like ZRH-ZRH. Most wouldn’t let me do that, 
+but some would. First I just tried ZRH-ZRH one way. Then, don't ask 
+what it means, ZRH-ZRH return. For those calculators which allow a 
+via, I added via ZRH... obviously this isn’t sensible, but it's a 
+window to how the calculators work. Results in the table below.</p>
+
+<p>Those calculators returning zero for all options must be calculating 
+emissions with a multiplier to great circle distance. Atmosfair has a 
+minimum flight distance of 50 km per leg. Choose climate adds a specific 
+take off-climb-descent constant to the great circle distance.</p>
+
+<p>What the calculator should do with this rather nonsensical input 
+is another question.</p>
+
+<table>
+  <caption>ZRH to ZRH, economy class, one passenger</caption>
+  <tr>
+    <th>Calculator</th>
+    <th>One way</th>
+    <th>Return</th> 
+    <th>One way via ZRH</th>
+    <th>Return via ZRH</th>
+  </tr>
+  
+  <tr>
+    <td>atmosfair</td>
+    <td style="text-align:right">8 kg</td>
+    <td style="text-align:right">16 kg</td>
+    <td style="text-align:right">16 kg</td>
+    <td style="text-align:right">32 kg</td>
+  </tr>
+  
+  <tr>
+    <td>brighterplanet</td>
+    <td style="text-align:right">209.79 kg</td>
+    <td style="text-align:right"> </td>
+    <td style="text-align:right"> </td>
+    <td style="text-align:right"> </td>
+  </tr>
+  
+  <tr>
+    <td>C-Level</td>
+    <td style="text-align:right">0 kg</td>
+    <td style="text-align:right">0 kg</td>
+    <td style="text-align:right"> </td>
+    <td style="text-align:right"> </td>
+  </tr>
+  
+  <tr>
+    <td>Choose climate</td>
+    <td style="text-align:right">56 kg</td>
+    <td style="text-align:right">112 kg</td>
+    <td style="text-align:right"> </td>
+    <td style="text-align:right"> </td>
+  </tr>
+  
+  <tr>
+    <td>ClimateCare</td>
+    <td style="text-align:right">0 kg</td>
+    <td style="text-align:right">0 kg</td>
+    <td style="text-align:right">0 kg</td>
+    <td style="text-align:right">0 kg</td>
+  </tr>
+  
+  <tr>
+    <td>Greentripper</td>
+    <td style="text-align:right">0 kg</td>
+    <td style="text-align:right">0 kg</td>
+    <td style="text-align:right">0 kg</td>
+    <td style="text-align:right">0 kg</td>
+  </tr>
+  
+</table>
+
+<p>Calculators accessed 2019-10-23</p>
+
+</body>
+
+<footer>
+  2019-10-23
+  Copyright Sophie Redford
+</footer> 
+
+</html>
