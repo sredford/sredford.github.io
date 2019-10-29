@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body
+{
+background-color:#d0e4fe;
+font-family:sans-serif;
+}
+h1
+{
+color:black;
+text-align:left;
+}
+p
+{
+font-size:14px;
+  width:     500px;
+  word-wrap: break-word;
+}
+ul
+{
+font-family:sans-serif;
+font-size:14px;
+list-style-type: circle;
+padding: 0px;
+margin-left: 30px;
+margin-top:0;
+line-height: 1.5em;
+}
+table, th, td {
+  font-size:14px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+}
+th {
+  text-align: left;
+}
+h4 {
+  width:     500px;
+  word-wrap: break-word;
+}
+footer
+{
+font-size:10px;
+}
+</style>
+</head>
+<body>
+
+<h1>Average flight CO<sub>2</sub> emissions</h1>
+
+<h4>Forget trying to work this out accurately, just take the average</h4>
+
+<p>Instead of trying to build a carbon emission estimate from the bottom up, 
+which is fraught with missing data and uncertainty, why not approach this 
+problem top down? Rather than inputting origin and destination airports, 
+worrying about load factors, radiative forcing, seating class, aircraft models, 
+holding patterns, what if we just average it all out?</p>
+
+<p>Within a few minutes of googling you can find these figures for air travel in 2018:<p>
+<ul>
+<li>total CO<sub>2</sub> emissions of all commercial operations: <a href="https://theicct.org/publications/co2-emissions-commercial-aviation-2018"style="color:blue;text-decoration:none;">918 million metric tons</a></li>
+<li>total number of passengers carried on scheduled services: <a href="https://www.icao.int/annual-report-2018/Pages/the-world-of-air-transport-in-2018.aspx"style="color:blue;text-decoration:none;">4.3 billion</a></li>
+</ul>
+<p>Normalising: 918E9 kg CO<sub>2</sub> / 4.3E9 passengers = 213 kg CO<sub>2</sub> / passenger</p>
+
+<p>This is an extremely reasonable sounding result. The atmosfair calculator 
+suggests that a one way economy class flight ORD-SFO generates 211 kg CO<sub>2</sub> 
+emissions (accessed 2019-10-29). Of course, some flights will be shorter and some 
+longer, but some will be empty and some full, some will use brand new planes with 
+next generation engines and some planes will be decades old, and all of this information 
+is usually missing from the emission calculation. Without going into serious detail, 
+it’s pretty hard to estimate emissions significantly different from this average value.</p>
+
+<p>Every time you get on a plane, you are responsible for 213 kg CO<sub>2</sub> emissions.</p>
+
+</body>
+
+<footer>
+  2019-10-29
+  Copyright Sophie Redford
+</footer> 
+
+</html>
