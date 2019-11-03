@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body
+{
+background-color:#d0e4fe;
+font-family:sans-serif;
+}
+h1
+{
+color:black;
+text-align:left;
+}
+p
+{
+font-size:14px;
+  width:     500px;
+  word-wrap: break-word;
+}
+ul
+{
+font-family:sans-serif;
+font-size:14px;
+list-style-type: circle;
+padding: 0px;
+margin-left: 30px;
+margin-top:0;
+line-height: 1.5em;
+width:     500px;
+}
+table, th, td {
+  font-size:14px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+}
+th {
+  text-align: left;
+}
+h4 {
+  width:     500px;
+  word-wrap: break-word;
+}
+footer
+{
+font-size:10px;
+}
+</style>
+</head>
+<body>
+
+<h1>Passenger load factor</h1>
+
+<h4>Scaling emissions by occupancy</h4>
+
+<p>Some of the CO<sub>2</sub> emissions calculators allow the user to 
+input the passenger load factor (PLF) - the fraction of seats on the 
+plane that are full. Varying this factor for a couple of routes, we see 
+that the results follow a simple relationship: emissions per passenger 
+for a particular PLF = emissions per passenger for PLF=1 / PLF. The total 
+amount of emissions stays the same, but fewer passengers are responsible 
+for it.</p>
+
+<p>Going along with this reasoning (I have some doubts, but I’ll address 
+them another time) this makes passenger load factor quite a relevant input 
+for a CO<sub>2</sub> emission calculation. If the plane were only half full, 
+then using this reasoning each passenger would be responsible for twice the 
+amount of CO<sub>2</sub>.</p>
+
+<p>How much does passenger load factor vary in reality? Ryanair achieved an 
+average passenger load factor of 
+<a href="https://investor.ryanair.com/wp-content/uploads/2019/07/Ryanair-2019-Annual-Report.pdf"style="color:blue;text-decoration:none;">96%</a> 
+over the last year, Emirates 
+<a href="https://www.emirates.com/media-centre/emirates-group-announces-2018-19-results/"style="color:blue;text-decoration:none;">77%</a>. 
+BEIS 
+<a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/829336/2019_Green-house-gas-reporting-methodology.pdf"style="color:blue;text-decoration:none;">reports</a> 
+that ATR72 200/500/600 aircraft on domestic routes average 64%, while Boeing 
+787-800 Dreamliner aircraft on short haul routes average 93%. There’s clearly 
+quite a spread to these figures, so the overall average of around 80% won’t 
+tell the full story.</p>
+
+<img src="plots/passengerLoadFactor_ZRH-LHR.png" alt="shorthaulplot">
+
+</br>  
+  
+<img src="plots/passengerLoadFactor_ZRH-PVG.png" alt="longhaulplot">
+
+<p>Calculators accessed 2019-11.</p>
+
+</body>
+
+<footer>
+  2019-11-03
+  Copyright Sophie Redford
+</footer> 
+
+</html>
