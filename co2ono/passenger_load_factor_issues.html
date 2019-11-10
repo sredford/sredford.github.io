@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body
+{
+background-color:#d0e4fe;
+font-family:sans-serif;
+}
+h1
+{
+color:black;
+text-align:left;
+}
+p
+{
+font-size:14px;
+  width:     500px;
+  word-wrap: break-word;
+}
+ul
+{
+font-family:sans-serif;
+font-size:14px;
+list-style-type: circle;
+padding: 0px;
+margin-left: 30px;
+margin-top:0;
+line-height: 1.5em;
+width:     500px;
+}
+table, th, td {
+  font-size:14px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+}
+th {
+  text-align: left;
+}
+h4 {
+  width:     500px;
+  word-wrap: break-word;
+}
+footer
+{
+font-size:10px;
+}
+</style>
+</head>
+<body>
+
+<h1>Passenger load factor</h1>
+
+<h4>The false friend disguised as a scaling factor</h4>
+
+<p>We saw previously that CO<sub>2</sub> emissions calculators 
+take into account the passenger load factor by scaling the same 
+total emissions by the occupancy. I see two possible issues with 
+this reasoning.</p>
+
+<p>Firstly, the assumption that the total emissions stays the same 
+isn’t true if we follow the approach of the calculators, and simply 
+vary the number of passengers. The payload (passengers, luggage) 
+accounts for about 25% of the total weight of the plane, fuel accounts 
+for another 25% and the aircraft body accounts for 50%. Reducing the 
+payload by half (50% passenger load factor) therefore reduces total 
+weight by 12.5%. A 
+<a href="https://en.wikipedia.org/wiki/Fuel_economy_in_aircraft#Weight"style="color:blue;text-decoration:none;">rule-of-thumb</a> 
+is that each 1% reduction in weight results in a 0.75% reduction in 
+fuel consumption. Therefore, with only 50% passenger load factor the 
+plane would burn 0.75x12.5 = 10% less fuel, not taking into account 
+the weight saving from not needing that 10% fuel. Comparing this 
+'decreasing passenger load factor means decreasing total emissions' 
+model with the 'total emissions stays the same for all passenger load 
+factors' model, we clearly see that the data points from the emissions 
+calculators follow the constant emissions model.</p>
+
+<img src="plots/passengerLoadFactor_ZRH-PVG_modelComp.png" alt="modelcompplot">
+
+<p>The second issue, and the elephant in the room here, is cargo. 
+Passenger planes do carry cargo, I read estimates that cargo contributes 
+<a href="https://science.howstuffworks.com/transport/flight/modern/air-freight1.htm"style="color:blue;text-decoration:none;">5-10%</a> 
+or 
+<a href="https://skift.com/2014/08/04/when-airlines-worry-more-about-cargo-than-they-do-about-passengers/"style="color:blue;text-decoration:none;">15-20%</a> 
+of their revenue. Reducing the passenger load factor on a particular 
+flight allows the airline to increase the cargo. I wasn't able to find 
+any data to analyse yet, but it seems logical that passenger load factor 
+and cargo load factor will be inversely proportional, with airlines 
+always operating close to their optimal weight. Otherwise they're 
+just flying around 50% body and 25% fuel for less than 25% profit 
+making payload. If the cargo is 'responsible' for its fraction of 
+the CO<sub>2</sub> emissions in the same way that passengers are, 
+then so long as the total payload weight (passengers plus cargo) 
+remains constant, the CO<sub>2</sub> emissions per passenger should 
+be independent of passenger load factor.</p>
+
+<p>Calculators accessed 2019-11.</p>
+
+</body>
+
+<footer>
+  2019-11-10
+  Copyright Sophie Redford
+</footer> 
+
+</html>
