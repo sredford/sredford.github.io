@@ -10,7 +10,7 @@
 <h4>I just wanted to estimate the carbon dioxide emissions of an upcoming flight... now I have this whole project</h4>
 
 <p>I was looking for a carbon-dioxide-emissions-from-air-travel calculator. 
-Well, one thing led to another, and pretty soon I had compiled the following table:</p>
+Well, one thing led to another, and pretty soon I had compiled the following table and histogram:</p>
 
 
 <table>
@@ -34,51 +34,51 @@ Well, one thing led to another, and pretty soon I had compiled the following tab
   </tr>
 
   <tr>
-    <td>C-Level</td>
-    <td>6.00 Tonnes CO<sub>2</sub></td>
-    <td style="text-align:right">6,000</td>
-  </tr>
-
-  <tr>
-    <td>carbon footprint</td>
-    <td>5.15 metric tons of CO<sub>2</sub>e</td>
-    <td style="text-align:right">5,150</td>
+    <td>carbonfootprint</td>
+    <td>5.10 metric tons of CO<sub>2</sub>e</td>
+    <td style="text-align:right">5,100</td>
   </tr>
   
   <tr>
-    <td>Carbonfund</td>
-    <td>Total Tonnes CO<sub>2</sub> 10.49</td>
-    <td style="text-align:right">10,490</td>
+    <td>carbonfund</td>
+    <td>16,700 lbs CO<sub>2</sub></td>
+    <td style="text-align:right">7,575</td>
   </tr>
   
   <tr>
-    <td>Carbon Neutral</td>
-    <td>CO<sub>2</sub> Emissions (t) 5.34</td>
-    <td style="text-align:right">5,340</td>
+    <td>carbonneutral</td>
+    <td>CO<sub>2</sub> Emissions (t) 5.28</td>
+    <td style="text-align:right">5,280</td>
   </tr>
   
   <tr>
-    <td>Choose climate</td>
+    <td>chooseclimate</td>
     <td>12,038 kg CO<sub>2</sub> Equivalent</td>
     <td style="text-align:right">12,038</td>
   </tr>
   
   <tr>
-    <td>ClimateCare</td>
-    <td>5.05 tonnes of CO<sub>2</sub></td>
-    <td style="text-align:right">5,050</td>
+    <td>clevel</td>
+    <td>6.00 Tonnes CO<sub>2</sub></td>
+    <td style="text-align:right">6,000</td>
+  </tr>
+
+  <tr>
+    <td>climatecare</td>
+    <td>5.51 tonnes of CO<sub>2</sub></td>
+    <td style="text-align:right">5,510</td>
   </tr>
   
   <tr>
-    <td>ClimateCare - air new zealand</td>
-    <td>2,693 kg of CO<sub>2</sub></td>
-    <td style="text-align:right">2,693</td>
+    <td>climatecare air new zealand</td>
+    <td>2,694 kg of CO<sub>2</sub></td>
+    <td style="text-align:right">2,694</td>
   </tr>
   
   <tr>
-    <td>co2balance</td>
-    <td>8.52 CO<sub>2</sub> Emissions tonnes</td>
-    <td style="text-align:right">8,520</td>
+    <td>climatepartner</td>
+    <td>8,422 kg CO<sub>2</sub></td>
+    <td style="text-align:right">8,422</td>
   </tr>
   
   <tr>
@@ -88,39 +88,39 @@ Well, one thing led to another, and pretty soon I had compiled the following tab
   </tr>
   
   <tr>
-    <td>FlyGreen</td>
+    <td>flygrn</td>
     <td>5.56 tonnes of CO<sub>2</sub></td>
     <td style="text-align:right">5,560</td>
   </tr>
   
   <tr>
-    <td>Greentripper</td>
+    <td>greentripper</td>
     <td>8.12 t CO<sub>2</sub></td>
     <td style="text-align:right">8,120</td>
   </tr>
   
   <tr>
-    <td>ICAO</td>
-    <td>1778.0 CO<sub>2</sub> (KG)</td>
-    <td style="text-align:right">1,778</td>
+    <td>icao</td>
+    <td>1761.1 CO<sub>2</sub> (KG)</td>
+    <td style="text-align:right">1,761</td>
   </tr>
   
   <tr>
     <td>myclimate</td>
-    <td>CO<sub>2</sub> amount: 7.0 t</td>
-    <td style="text-align:right">7,000</td>
+    <td>CO<sub>2</sub> amount: 6.0 t</td>
+    <td style="text-align:right">6,000</td>
   </tr>
   
   <tr>
-    <td>myclimate-lufthansa</td>
-    <td>CO<sub>2</sub> amount: 2.4 t</td>
-    <td style="text-align:right">2,400</td>
+    <td>myclimate lufthansa/swiss</td>
+    <td>CO<sub>2</sub> amount: 2.5 t</td>
+    <td style="text-align:right">2,500</td>
   </tr>
   
   <tr>
-    <td>myclimate-swiss</td>
-    <td>CO<sub>2</sub> amount: 2.4 t</td>
-    <td style="text-align:right">2,400</td>
+    <td>offsetters</td>
+    <td>5.99 tonnes CO<sub>2</sub>e</td>
+    <td style="text-align:right">5,990</td>
   </tr>
   
   <tr>
@@ -143,8 +143,9 @@ Well, one thing led to another, and pretty soon I had compiled the following tab
   
 </table>
 
-<p>Calculators accessed 2019-08-11, 
-except co2balance which was returning 404 on this date, but was accessed earlier in the month.<br>
+<img src="plots/origins_ZRH-PVG-AKL.png" alt="plot">
+
+<p>Calculators accessed 2020-01-25.</br>
 *By email, south pole clarified that their Ton is 1,000 kg.</p>
 
 <p>That’s the results of entering the same trip into twenty different 
@@ -159,7 +160,7 @@ started digging into the details, and this project was born.</p>
 </body>
 
 <footer>
-  2019-08-11
+  2019-08-11, 2020-01-25
   Copyright Sophie Redford
 </footer> 
 
