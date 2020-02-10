@@ -13,12 +13,8 @@
 This is designed to account for high altitude CO<sub>2</sub> emissions being 'worse' than ground level emissions. 
 As seen in the table below, calculators use factors ranging from 1 (no RF) to 3 (the amount of CO<sub>2</sub> calculated 
 is multiplied by three). 
-This accounts for at least some of the differences between the initial answers.</p>
-
-<p>If this strikes you as a rather huge source of uncertainty, then I agree with you. 
-The lack of an agreed-upon factor makes it easy to wonder if the calculators pick one 
-that suits - higher for a for-profit carbon offsetting scheme, lower for an airline looking 
-to minimise its footprint. Watch out for a future literary review on where these factors come from.</p>
+Dividing the result of each calculator by the RF factor used, the relative standard deviation of the dataset decreases.
+Different RF factors therefore account for at least some of the differences between the initial answers.</p>
 
 <table>
   <caption>Round trip, ZRH to PVG, economy class, one passenger</caption>
@@ -46,36 +42,15 @@ to minimise its footprint. Watch out for a future literary review on where these
   <tr>
     <td>carbonfootprint</td>
     <td>1.891</td>
-    <td style="text-align:right">2,530 kg</td>
-    <td style="text-align:right">1,338 kg</td>
+    <td style="text-align:right">2,500 kg</td>
+    <td style="text-align:right">1,322 kg</td>
   </tr>
   
   <tr>
     <td>carbonfootprint</td>
     <td>1</td>
-    <td style="text-align:right">1,340 kg</td>
-    <td style="text-align:right">1,340 kg</td>
-  </tr>
-  
-  <tr>
-    <td>carbonfund</td>
-    <td>1</td>
-    <td style="text-align:right">1,900 kg</td>
-    <td style="text-align:right">1,900 kg</td>
-  </tr>
-  
-  <tr>
-    <td>carbonfund</td>
-    <td>2.7</td>
-    <td style="text-align:right">5,130 kg</td>
-    <td style="text-align:right">1,900 kg</td>
-  </tr>
-  
-  <tr>
-    <td>carbonneutral</td>
-    <td>1.9</td>
-    <td style="text-align:right">5,340 kg</td>
-    <td style="text-align:right">2,811 kg</td>
+    <td style="text-align:right">1,320 kg</td>
+    <td style="text-align:right">1,320 kg</td>
   </tr>
   
   <tr>
@@ -95,10 +70,24 @@ to minimise its footprint. Watch out for a future literary review on where these
   <tr>
     <td>climatecare</td>
     <td>1.9</td>
-    <td style="text-align:right">2,480 kg</td>
-    <td style="text-align:right">1,305 kg</td>
+    <td style="text-align:right">2,710 kg</td>
+    <td style="text-align:right">1,426 kg</td>
+  </tr>
+
+  <tr>
+    <td>climatepartner</td>
+    <td>3</td>
+    <td style="text-align:right">4,156 kg</td>
+    <td style="text-align:right">1,385 kg</td>
   </tr>
   
+  <tr>
+    <td>co2nsensus</td>
+    <td>1</td>
+    <td style="text-align:right">2,729 kg</td>
+    <td style="text-align:right">2,729 kg</td>
+  </tr>
+
   <tr>
     <td>flygrn</td>
     <td>1.9</td>
@@ -123,8 +112,8 @@ to minimise its footprint. Watch out for a future literary review on where these
   <tr>
     <td>icao</td>
     <td>1</td>
-    <td style="text-align:right">797 kg</td>
-    <td style="text-align:right">797 kg</td>
+    <td style="text-align:right">799 kg</td>
+    <td style="text-align:right">799 kg</td>
   </tr>
   
   <tr>
@@ -141,6 +130,13 @@ to minimise its footprint. Watch out for a future literary review on where these
     <td style="text-align:right">1,200 kg</td>
   </tr>
   
+  <tr>
+    <td>offsetters</td>
+    <td>1.9</td>
+    <td style="text-align:right">2,930 kg</td>
+    <td style="text-align:right">1,542 kg</td>
+  </tr>
+
   <tr>
     <td>omnicalculator flight-emissions</td>
     <td>2</td>
@@ -164,23 +160,9 @@ to minimise its footprint. Watch out for a future literary review on where these
   
 </table>
 
-<p>Calculators accessed 2019-08-17
+<img src="plots/RF_undo_ZRH-PVG.png" alt="plot">
 
-<p>Some of those numbers don't make sense at the moment:
-<ul>
-<li>greentripper offers an optional RF factor 2, but there's less than a factor two difference between their two answers.</li>
-<li>myclimate uses a factor 2 for their own calculations, but a factor 1 for calculations for swiss and lufthansa. 
-Currently that doesn't work out, but myclimate did update their calculator on 2019-08-13. 
-Changes might still be propagating.</li>
-</ul>
-</p>
-
-<p>For some calculators I wasn't able to find RF factors yet:
-<ul>
-<li>co2nsensus</li>
-<li>air new zealand</li>
-</ul>
-</p>
+<p>Calculators accessed 2020-02-08.</p>
 
 </body>
 
