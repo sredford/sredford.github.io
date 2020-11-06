@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Seats on a plane</h1>
+
+<h4>One aircraft model, many seating configurations</h4>
+
+<p>To calculate an individual’s CO<sub>2</sub> emissions, we need to know how many seats there are on the plane. 
+This isn’t a straightforward question. 
+Different airlines choose different seating configurations for the same model of plane. 
+Sometimes the same airline even has several layouts for the same model! 
+The A380-800 is a good example.</p>
+
+<p>The maximum capacity of the A380-800 is 868 seats, in single-class (economy) configuration. 
+However, no airline operates such a layout. Using 
+<a href="https://www.seatguru.com/"style="color:blue;text-decoration:none;">SeatGuru</a>, 
+we see that the number of seats on an A380-800 varies by as much as 60% depending on airline and layout. 
+At the two ends of the spectrum, Emirates layout 3 has 615 seats while Singapore Airlines layout 2 has 379. 
+That’s a factor 1.6 different! 
+Everything else being equal, a passenger on Singapore Airlines layout 2 will be responsible for 60% more CO<sub>2</sub> 
+than a passenger on Emirates layout 3. 
+Even within the same airline, Emirates layouts 1 and 3 and Singapore Airlines 2 and 3 are both a factor 1.25 different.</p>
+
+<p>To properly calculate CO<sub>2</sub> emissions, both aircraft model and seating configuration must be known.</p>
+
+<img src="plots/seats_A380-800.png" alt="A380seatsplot">
+
+<p>SeatGuru accessed 2020-11.</p>
+
+</body>
+
+<footer>
+  2020-11-06
+  Copyright Sophie Redford
+</footer> 
+
+</html>
