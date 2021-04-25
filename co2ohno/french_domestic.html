@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>France suspends short domestic flights</h1>
+
+<h4>But flight distance alone doesn't determine emissions</h4>
+
+<p>MPs in France
+<a href="https://www.lemonde.fr/planete/article/2021/04/10/loi-climat-l-assemblee-nationale-vote-la-suppression-de-certaines-lignes-aeriennes-interieures_6076333_3244.html"style="color:blue;text-decoration:none;">voted</a>
+last week to suspend flights on domestic routes with a direct train service of less than 2h30.</p>
+
+<p>Using Air France’s own
+<a href="https://corporate.airfrance.com/en/co2/calculateur"style="color:blue;text-decoration:none;">CO<sub>2</sub> calculator</a> 
+I looked at the estimated emissions of some direct domestic routes.
+The figure below shows emissions as a function of distance. 
+As expected, broadly speaking emissions rise as a function of distance travelled.</p>
+
+<p>Normalising to consider the grams of CO<sub>2</sub> per passenger per kilometer, we see that the data is grouped into three: 
+flights with approximately 90, 130 and 170 g per passenger per km. 
+Those three lines are overlaid on the data points. 
+Using seat guru we can find out which aircraft types operate on these routes. 
+We find that aircraft type correlates very well with normalised emissions.</p>
+
+<p>This shows that flight distance is only one factor in determining CO<sub>2</sub> emissions. 
+Aircraft type plays just as large a role. 
+Maybe in addition to suspending short routes we should suspend less efficient planes?</p>
+
+<img src="plots/frenchDomesticFlights.png" alt="frenchDomesticFlights">
+</br>
+<img src="plots/frenchDomesticFlightsNormalised.png" alt="frenchDomesticFlightsNormalised">
+
+<p>Air France CO<sub>2</sub> calculator accessed 2021-04-18</p>
+<p>Seat guru accessed 2021-04-12 for routes 2021-04-12 to 2021-04-19</p>
+
+</body>
+
+<footer>
+  2021-04-25
+  Copyright Sophie Redford
+</footer> 
+
+</html>
